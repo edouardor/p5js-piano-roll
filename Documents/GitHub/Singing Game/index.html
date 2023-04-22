@@ -9,12 +9,18 @@
             border: 1px solid black;
         }
     </style>
+
 </head>
 <body>
-    <input type="file" id="midi-file-input" accept=".mid,.midi">
+    <input type="file" id="midiFileInput" accept=".mid,.midi">
     <canvas id="gameCanvas" width="800" height="600"></canvas>
-    <script src="MidiParser.js"></script>
-    <script src="musicGame.js"></script>
+    <button id="startButton">Start Game</button>
+    <select id="trackSelect" disabled>
+      <option value="">Select a MIDI track</option>
+    </select> 
+    <script src="main.js"></script>
+    <script src="musicGame.js" type="module"></script>
+   
 </body>
 </html>
 
